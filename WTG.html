@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "UTF-8">
+        <title>罠かけ単語ゲーム</title> 
+    </head>
+    <body>
+        <header>
+            <h1>楽しいゲーム集(仮)</h1>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href = "index.html">ホーム</a></li>
+                    <li><a href = "game.html">ゲーム集</a></li>
+                    <li><a href = "kaisetu.html">このサイトの目的</a></li>
+                    <li><a href = "kousinrireki.html">更新履歴</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>罠かけ単語ゲーム</h2>
+            <hr>
+            <h3>ルール説明</h3>
+            <p>＊事前に出題者と解答者を決めてください</p>
+            <ol>
+                <li>話し合い、お題を決めます</li>
+                <li>出題者がお題について、<strong>罠となる単語</strong>を設定します</li>
+                <li>解答者がお題について、<strong>5つの単語</strong>を入力します</li>
+                <li>入力した5つ単語の中に、<strong>罠となる単語が入っていれば出題者側の勝利</strong>、<strong>入っていなければ解答者側の勝利となります。</strong></li>
+            </ol>
+            <br>
+            <hr>
+            <h3>罠となる単語を入力</h3>
+            <p>話し合いの中で決定した、お題に関する罠となる単語を入力してください</p>
+            <br>
+            <p><input type = "text" id = "thisIsNgwordId" name = "thisIsNgword"></p>
+            <p><input type = "button" value = "入力内容を確定する" onclick="GameStartButton()"></p>
+            <hr>
+            <h3>単語を5つ入力</h3>
+            <p>お題に関する単語を5つ入力してください</p>
+            <ol>
+                <li><input type = "text" id = "Word1ID" name = "Word1"></li>
+                <li><input type = "text" id = "Word2ID" name = "Word2"></li>
+                <li><input type = "text" id = "Word3ID" name = "Word3"></li>
+                <li><input type = "text" id = "Word4ID" name = "Word4"></li>
+                <li><input type = "text" id = "Word5ID" name = "Word5"></li>
+            </ol>
+            <p><input type ="button" onclick="AnswerWordSend()" value = "入力内容を確定する"></p>
+            <br>
+        </main>
+
+        <footer>
+            <hr>
+            <small>&copy;楽しいゲーム集(仮)</small>
+        </footer>
+        
+        <script src = "Wtg.js"></script>
+    </body>
+</html>
