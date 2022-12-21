@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = ja>
+    <head>
+        <meta charset = "UTF-8">
+        <title>自作ゲーム集</title>
+        <link rel="stylesheet" href="TypingGame.css">
+    </head>
+    <body>
+        <header>
+            <h1>楽しいゲーム集(仮)</h1>
+            <hr>
+            <nav>
+                <ul>
+                    <li><a href = "index.html">ホーム</a></li>
+                    <li><a href = "game.html">ゲーム集</a></li>
+                    <li><a href = "kaisetu.html">このサイトの目的</a></li>
+                    <li><a href = "kousinrireki.html">更新履歴</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>タイピングゲーム</h2>
+            <hr>
+            <h3>開始ボタンを押すとゲームが始まります</h3>
+            <input type = "button" value = "開始" onclick="OdaiwoHyouzi()">
+            <h3>この下に表示される文字を入力してください！</h3>
+            <div id = "OdaiNoHyouzi">
+                <p id = "Odai">お題だよー</p>
+            </div>
+            <input type = "text" id = "Boxid" name = "Box">
+            <br>
+            <br>
+            <input type = "button" value = "入力完了" onclick="Seikai()">
+        </main>
+
+        <footer>
+            <hr>
+            <small>&copy;楽しいゲーム集(仮)</small>
+        </footer>
+        <script src = "TypingGame.js"></script>
+    </body>
+</html>
