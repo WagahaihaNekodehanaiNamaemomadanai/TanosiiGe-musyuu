@@ -31,6 +31,6 @@ function Seikai()
             }
         }
         Odai.textContent = Tango[OdaiNumber];//新しく決まった単語を代入
-        OldTango = Tango[OdaiNumber];現在の単語を保持
+        OldTango = Tango[OdaiNumber];//現在の単語を保持
     }
 }
